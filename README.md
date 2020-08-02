@@ -26,65 +26,70 @@
 Today's total Xp: 50
 ```
 
-##  :diamond_shape_with_a_dot_inside: What I did on competitive programing problems today.
+---
 
-1. **Sum of Digits**
+## :diamond_shape_with_a_dot_inside: What I did on competitive programing problems today.
 
-   > *Write a program that accepts a number, **n**, and outputs the same.*
+#### :arrow_forward: Sum of Digits
 
-   ```c++
-   #include<iostream>
-   #include<string>
-   
-   using namespace std;
-   int main() 
-   {
-       int T;
-       cin >> T;
-       for(int y = 0; y < T; ++y) {
-           string s;
-           cin >> s;
-           int sum = 0;
-           for(int x = 0; x < s.length(); ++x) {
-               sum += (int)s[x] - 48; 
-           }
-           cout << sum << endl;
-   	}
-   }
-   ```
+> *Write a program that accepts a number, **n**, and outputs the same.*
 
-   
+```c++
+#include<iostream>
+#include<string>   
+using namespace std;
 
-2. **Number Mirror**
+int main() {
+    int T;
+    cin >> T;
+    for(int y = 0; y < T; ++y) {
+        string s;
+        cin >> s;
+        int sum = 0;
+        for(int x = 0; x < s.length(); ++x) {
+            sum += (int)s[x] - 48;   
+        }
+        cout << sum << endl;
+    }
+}
+```
 
-   > *You're given an integer **N**. Write a program to calculate the sum of all the digits of **N**.*
+---
 
-   ```c++
-   #include <iostream>
-   int main() {
-   
+#### :arrow_forward: Number Mirror
+
+> *You're given an integer **N**. Write a program to calculate the sum of all the digits of **N**.*
+
+```c++
+
+#include <iostream>
+int main() {
        int n;
        std::cin >> n;
        std::cout << n << std::endl;
-   }
-   ```
+}
+```
 
-3. **Find Remainder**
-	> ***Write a program to find the remainder when an integer A is divided by an integer B.***
-	```c++
-	#include <iostream>
-	
-	int main() {
-	    int T;
-	    std::cin >> T;
-	    for(int x = 0; x < T; ++x) {
-	        int a , b;
-	        std::cin >> a >> b;
-	        std::cout << a % b << std::endl;
-	    }
-	}
-	```
+---
 
+#### :arrow_forward: Find Remainder
+
+> ***Write a program to find the remainder when an integer A is divided by an integer B.***
+```c++
+
+#include <iostream>
+int main() {
+    int T;
+    std::cin >> T;
+    for(int x = 0; x < T; ++x) {
+        int a , b;
+        std::cin >> a >> b;
+        std::cout << a % b << std::endl;
+    }
+}
+```
+
+---
 
 ## :diamond_shape_with_a_dot_inside: What I did on React.js today.
 
@@ -92,56 +97,56 @@ Today's total Xp: 50
 
 - I have learnt about **Components** in reactjs.
 
-  ### How to create App components in reactjs?
-
-  ```js
-  //this is a functional component
-  function Hello() {
-      return (
-      	<h1>Hello, world!</h1>
-      )
-  }
-  ```
-	```js
-class Hello extends React.Component {
-  	render() {
-  	
-  		return (
-  			<h1>Hellom world!</h1>
-  		);
-  	
-		};
-  };  
-  ```
-  ## How to render?
-
-  ```js
-  // rendering
-  ReactDOM.render(
-  	// takes component(s)
-      <Hello />
-      // takes the container to add component(s)
-      document.getElementById("root")
-  );
-  ```
-
-  ## Full Code
-
-  ```js
-  function Hello() {
-      return (
-      	<h1>Hello, world!</h1>
-      )
-  }
-  // rendering
-  ReactDOM.render(
-  	// takes component(s)
-      <Hello />
-      // takes the container to add component(s)
-      document.getElementById("root")
-  );
   
-  ```
+
+### :arrow_forward: How to create App components in reactjs?
+
+```jsx
+//this is a functional component
+function Hello() {
+    return (
+        <h1>Hello, world!</h1>
+    )
+}
+```
+```js
+// This is a class compoonent
+class Hello extends React.Component {
+	render() {
+		return (
+			<h1>Hellom world!</h1>
+		);
+  	};
+};  
+```
+### :arrow_forward: How to render?
+```jsx
+// rendering
+	ReactDOM.render(
+		// takes component(s)
+		<Hello />
+		// takes the container to add component(s)
+		document.getElementById("root")
+	);
+```
+
+### :arrow_forward: Full Code
+```jsx
+function Hello() {
+	return (
+		<h1>Hello, world!</h1>
+	)
+}
+// rendering
+ReactDOM.render(
+	// takes component(s)
+	<Hello />
+	// takes the container to add component(s)
+	document.getElementById("root")
+);
+```
+---
+
 ## :diamond_shape_with_a_dot_inside: What the heck is pre and post increment?
 
 **Pre-increment operator**: A pre-increment operator is  used to increment the value of a variable before using it in a  expression. In the Pre-Increment, value is first incremented and then  used inside the expression.
@@ -202,6 +207,8 @@ cout << a++ << endl;
 ```
 
 ----
+
+---
 
 ## :sleeping_bed: Final note for today!
 
